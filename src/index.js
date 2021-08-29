@@ -1,14 +1,10 @@
-// import './css/styles.css';
-// import cards from './menuCards.hbs';
-// import ingredients from 'menu.json';
+import elements from './elements.hbs';
+import ingredients from './menu.json';
 
+import './css/styles.css';
 
-// const Theme = {
-//   LIGHT: 'light-theme',
-//   DARK: 'dark-theme',
-// };
+const listMenu = document.querySelector('.js-menu');
 
-// const listCardsMenu = document.querySelector('js-menu');
-// const listCardsItem = cards(listCards);
-// listCardsMenu.insertAdjacentHTML('beforeend', listCardsItem);
+const elementsItem = elements(ingredients);
+listMenu.insertAdjacentHTML('beforeend', elementsItem);
 
